@@ -4,10 +4,10 @@ from itertools import combinations
 import matplotlib.pyplot as plt
 
 # Load the first DataFrame from a CSV file and rename it as 'nba_data'
-nba_data = pd.read_csv('nba.csv')
+nba_data = pd.read_csv('data/nba.csv')
 
 # Load the second DataFrame from a CSV file and rename it as 'nfl_data'
-nfl_data = pd.read_csv('nfl.csv')
+nfl_data = pd.read_csv('data/nfl.csv')
 
 # Remove rows with missing values in the 'date_of_birth' column in the 'nfl_data' DataFrame
 nfl_data.dropna(subset=['date_of_birth'], inplace=True)
